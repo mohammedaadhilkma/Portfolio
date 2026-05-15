@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
-import emailjs from '@emailjs/browser';
+
 import { Snackbar, Alert } from '@mui/material';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FaEnvelope, FaLinkedin, FaWhatsapp, FaCopy, FaCheck } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 
