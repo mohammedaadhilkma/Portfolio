@@ -17,7 +17,7 @@ Welcome to my professional portfolio website! This is an ultra-premium, futurist
 - **Frontend**: React.js, Styled Components, Framer Motion, Three.js
 - **Icons**: React Icons, DevIcons
 - **Animation**: React Type Animation, Canvas-based particles
-- **Communication**: Integrated with EmailJS for direct messaging (with mailto fallback)
+- **Communication**: Integrated with Formspree for reliable, direct email messaging.
 
 ## 📁 Project Highlights
 
