@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+:root {
+  --primary: #00f2ff;
+  --secondary: #7000ff;
+  --bg: #050505;
+}
+
+body {
+  background-color: var(--bg);
+  color: #fff;
+  overflow-x: hidden;
+  cursor: none; /* We'll implement a custom cursor */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Neon Text & Glow */
+.neon-text {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+.neon-border {
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+/* Custom Cursor Styles */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor-follower {
+  width: 8px;
+  height: 8px;
+  background: var(--secondary);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+/* Background Animated Blobs */
+.blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+  filter: blur(120px);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.15;
+  animation: move 20s infinite alternate;
+}
+
+@keyframes move {
+  from { transform: translate(-10%, -10%); }
+  to { transform: translate(10%, 10%); }
+}
+
+/* Magnetic Button Effect (Basic setup) */
+.magnetic {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Transitions */
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  z-index: 10000;
+  pointer-events: none;
+}
