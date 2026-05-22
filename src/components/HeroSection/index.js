@@ -44,7 +44,7 @@ const HeroSection = () => {
                             
                             <CTAContainer>
                                 <ResumeButton href="#projects">View Projects</ResumeButton>
-                                <ResumeButton outline href={Bio.resume} target='_blank' rel="noopener noreferrer">Download Resume</ResumeButton>
+                                <ResumeButton outline href={Bio.resume} target='_blank' rel="noopener noreferrer">Resume</ResumeButton>
                             </CTAContainer>
                         </motion.div>
                     </HeroLeftContainer>
