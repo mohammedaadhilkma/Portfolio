@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am a passionate final-year Computer Science Engineering student with a deep focus on Full Stack Development, Cloud Engineering, and modern web technologies. I thrive on building scalable, user-centric applications using the MERN stack and am constantly exploring new frontiers in cloud infrastructure and DevOps. With a growth mindset and relentless drive, I aim to craft digital experiences that make a real impact.",
   github: "https://github.com/mohammedaadhilkma",
-  resume: "/Mohammed_Aadhil_K_Resume.pdf",
+  resume: "/f.pdf",
   linkedin: "https://www.linkedin.com/in/mohammed-aadhil-kma-engineer",
   twitter: "",
   insta: "",
